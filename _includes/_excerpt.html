@@ -1,0 +1,8 @@
+<section class="index">
+            <h2 class="title"><a href="{{ site.url}}{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
+            <div class="meta">
+                {% if post.author %}Written By <address>{{ site.data.authors[post.author].name }}</address> &mdash;{% endif %}
+                <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            </div>
+			<div class="excerpt">{{ post.excerpt }}</div>
+</section>

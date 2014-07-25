@@ -1,0 +1,31 @@
+---
+---
+/* CONFIGURATION */
+
+/* Bodytext font */
+$font: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Font for headings */
+$fontheadings: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Text colors */
+$text: #21272d;
+$textmuted: #848484;
+$accent: #009ee2;
+
+$activemenu: #ed7a32;
+$bignote: $activemenu;
+
+$mainbgcolor:  rgba(255, 255, 255, 0);
+$mainbgcolor1: rgba(255,255,255,0.14);
+$mainbgcolor2: rgba(255,255,255,0);
+
+
+/* IMPORT CSS FILES */
+@import "_bootstrap.scss";
+@import "_base.scss";
+@import "_nav.scss";
+@import "_article.scss";
+@import "_icons.scss";
+@import "_syntax.scss";
+@import "_responsive.scss";

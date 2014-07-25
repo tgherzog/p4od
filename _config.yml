@@ -1,0 +1,65 @@
+sass:
+  sass_dir: css
+  style: compressed
+
+markdown: kramdown
+
+kramdown:
+  parse_block_html: false
+
+# base url - no trailing slash
+url: http://www.p4od.org
+
+contact: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
+
+# theme parameters
+inc:
+  title: Partnership for Open Data
+  subtitle: Promoting Open Data in Developing Countries
+  logo: logos/POD-web-thumb.png # used for <link rel="apple-touch-icon">
+  slogan: # Promoting Open Data in Developing Countries
+  product_url: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
+
+  google_font: 'Droid+Sans:400,700'
+
+  # social media
+  facebook:     p4opendata
+  twitter:      PforOD
+
+menu:
+-
+  id: about
+  href: /about.html
+  title: About POD
+-
+  id: resources
+  href: /resources.html
+  title: Resources
+-
+  id: partners
+  href: /partners.html
+  title: Partners
+-
+  id: get-involved
+  href: /get-involved.html
+  title: Get Involved
+-
+  id: blog
+  href: /blog.html
+  title: News &amp; Blog
+
+
+defaults:
+-
+  scope:
+    path: ""
+    # type: page
+  values:
+    menu: blog
+    cover_image: banners/blog-cover.jpg
+-
+  scope:
+    path: ""
+    type: post
+  values:
+    layout: post

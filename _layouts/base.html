@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title | xml_escape }} &mdash; {{ site.inc.title }}{% else %}{{ site.inc.title }} &mdash; {{ site.inc.subtitle }}{% endif %}</title>
+    {% if site.inc.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.inc.google_font }}" rel="stylesheet" type="text/css">{% endif %}
+	<link type="text/css" rel="stylesheet" href="{{site.url}}/css/main.css"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/{{ site.inc.logo }}"/>
+    <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
+    <meta name="title" content="{% if page.title %}{{ page.title | xml_escape }} {% else %}{{ site.inc.title }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.inc.gplus }}">{% endif %} 
+    {% if page.author.gplus %}<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}">{% endif %}       
+    <meta property="og:title" content="{% if page.title %}{{ page.title | xml_escape }} {% else %}{{ site.inc.title }}{% endif %}"/>
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    {% if page.cover_image %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ page.cover_image }}"/>
+    {% if page.main_image %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ page.main_image }}"/>  
+    {% endif %}
+    <meta property="og:image" content="{{ site.url }}/images/{{ site.inc.logo }}"/>   
+    {% endif %}
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}"/>
+    <meta name="description" content="{{ page.excerpt }}"/>
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.inc.title }}">     
+</head>
+<body>
+    
+<section class="site-nav">
+    <header>
+        <nav id="navigation">
+            <a class="brand" href="{{ site.url }}/">
+                <img src="{{site.url}}/images/{{ site.inc.logo }}" alt="POD">
+            </a>
+			{% for item in site.menu %}
+			<a {%if item.id == page.menu%} class="active" {%endif%}href="{{ site.url }}{{ item.href }}">{{ item.title }}</a>
+			{% endfor %}
+        </nav>
+        {% if site.inc.tagline or site.inc.product_url %}<nav class="tagline">
+            {% if site.inc.tagline %}<span>{{ site.inc.tagline }}</span>{% endif %}
+            {% if site.inc.product_url %}<a target=_blank href="{{ site.inc.product_url }}" class="btn btn-outline">Contact Us</a>{% endif %}
+        </nav>{% endif %}
+    </header>
+</section>
+
+{{ content }}
+
+<footer class="site-footer">
+    <div class="container">
+        <nav class="menu">
+			{% assign menusep = "" %}
+			{% for item in site.menu %}
+			{{menusep}} <a {% if item.id == page.menu %}class="active" {% endif %}href="{{ site.url }}{{ item.href }}">{{ item.title }}</a>
+			{% assign menusep = "&middot;" %}
+			{% endfor %}
+        </nav>
+
+        <nav class="social">
+            {% if site.inc.twitter %}
+            <a href="https://twitter.com/{{ site.inc.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            {% endif %}
+            {% if site.inc.facebook %}
+            <a href="http://facebook.com/{{ site.inc.facebook }}" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            {% endif %}    
+            <a href="/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+
+		<nav class="license">
+		<a rel="license" class="cc-logo" href="http://creativecommons.org/licenses/by/4.0/">
+		<img alt="Creative Commons License" src="{{site.url}}/images/logos/cc-by-88x31.png"/></a>
+		<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+		</nav>
+        
+        <p>Incorporated theme by <a href="https://sendtoinc.com">Inc</a></p>
+    </div>
+</footer>
+
+{% include _scripts.html %}
+
+</body>
+</html>
