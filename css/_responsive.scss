@@ -136,4 +136,26 @@
   .site-nav #navigation a {
     display: none;
   }
+
+  header img.brand {
+    width: 150px;
+  }
+
+  table.founders {
+	td.logo {
+	  width: 150px;
+
+	  img { max-width: 130px; }
+	}
+  }
+}
+
+@media (max-width: 485px) {
+  header img.brand {
+    display: none;
+  }
+
+  table.founders td.logo {
+    display: none;
+  }
 }
