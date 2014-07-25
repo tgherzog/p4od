@@ -7,8 +7,15 @@ markdown: kramdown
 kramdown:
   parse_block_html: false
 
+exclude:
+- README.md
+
 # base url - no trailing slash
 url: http://tgherzog.github.io/p4od
+
+# site_css is the name of the compiled CSS file. This is necessary because currently it's hard to implement SASS
+# on gh-pages, so we must manually copy the built CSS file back to the source directory before commits
+site_css: site.css
 
 contact: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
 
@@ -19,6 +26,7 @@ inc:
   logo: logos/POD-web-thumb.png # used for <link rel="apple-touch-icon">
   slogan: # Promoting Open Data in Developing Countries
   product_url: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
+
 
   google_font: 'Droid+Sans:400,700'
 
