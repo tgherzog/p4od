@@ -8,7 +8,7 @@ kramdown:
   parse_block_html: false
 
 # base url - no trailing slash
-url: http://www.p4od.org
+url: http://tgherzog.github.io/p4od
 
 contact: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
 
