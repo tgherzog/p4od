@@ -57,6 +57,7 @@ menu:
   title: News &amp; Blog
 
 
+# Note that defaults are apparently not supported on gh-pages
 defaults:
 -
   scope:
