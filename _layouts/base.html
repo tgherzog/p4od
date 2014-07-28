@@ -7,7 +7,7 @@
     {% if site.inc.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.inc.google_font }}" rel="stylesheet" type="text/css">{% endif %}
 	<link type="text/css" rel="stylesheet" href="{{site.url}}/css/{{site.site_css}}"/>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="{{ site.url }}/images/{{ site.inc.logo }}"/>
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/logos/POD-touch-icon.png"/>
     <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
     <meta name="title" content="{% if page.title %}{{ page.title | xml_escape }} {% else %}{{ site.inc.title }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -34,7 +34,7 @@
     <header>
         <nav id="navigation">
             <a class="brand" href="{{ site.url }}/">
-                <img src="{{site.url}}/images/{{ site.inc.logo }}" alt="POD">
+                <img src="{{site.url}}/images/logos/POD-web-thumb2.png" alt="POD">
             </a>
 			{% for item in site.menu %}
 			<a {%if item.id == page.menu%} class="active" {%endif%}href="{{ site.url }}{{ item.href }}">{{ item.title }}</a>
