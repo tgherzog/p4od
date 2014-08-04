@@ -30,10 +30,6 @@ If your organization is interested in joining POD, please consult the [partnersh
 
 >TBD
 
-## Mailing List
-
->TBD
-
 ## Request Assistance
 
 >TBD

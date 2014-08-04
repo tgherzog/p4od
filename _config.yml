@@ -7,8 +7,15 @@ markdown: kramdown
 kramdown:
   parse_block_html: false
 
+exclude:
+- README.md
+
 # base url - no trailing slash
-url: http://www.p4od.org
+url: http://tgherzog.github.io/p4od
+
+# site_css is the name of the compiled CSS file. This is necessary because currently it's hard to implement SASS
+# on gh-pages, so we must manually copy the built CSS file back to the source directory before commits
+site_css: site.css
 
 contact: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
 
@@ -16,9 +23,10 @@ contact: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIj
 inc:
   title: Partnership for Open Data
   subtitle: Promoting Open Data in Developing Countries
-  logo: logos/POD-web-thumb.png # used for <link rel="apple-touch-icon">
+  logo: logos/POD-400x400.png 
   slogan: # Promoting Open Data in Developing Countries
   product_url: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
+
 
   google_font: 'Droid+Sans:400,700'
 
@@ -49,13 +57,14 @@ menu:
   title: News &amp; Blog
 
 
+# Note that defaults are apparently not supported on gh-pages
 defaults:
 -
   scope:
     path: ""
     # type: page
   values:
-    menu: blog
+    # menu: blog
     cover_image: banners/blog-cover.jpg
 -
   scope:
