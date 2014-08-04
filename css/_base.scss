@@ -372,3 +372,17 @@ header {
   }
 }
 
+table.events {
+  td, th {
+    padding: 0.25em 1em;
+	text-align: left;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  td.empty {
+    text-align: center;
+  }
+}
