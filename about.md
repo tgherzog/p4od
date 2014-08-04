@@ -27,9 +27,25 @@ execute future open data initiatives.
 
 ## Where We Work ##
 
->idea for design: A map of the countries where we currently work with explanations about the work that is done - imagemap, below the map an alphabetic list of the countries
->
->country profile page (country, activities, time frame (when project started and ended, resources, map linking to country information on wiki) (custom fields)
+
+* Botswana
+* Brazil
+* Burkina Faso
+* Indonesia
+* Macedonia
+* Mexico
+* Morocco
+* Tajikistan
+* Tanzania
+* Philippines
+* Nigeria
+* India
+* Peru
+{: .countries :}
+
+<img class="country-map" src="{{ site.url }}/images/country-map.png"/>
+
+<small>As of 4 July, 2014</small>
 
 ## POD Action Plan ## {#action-plan}
 
