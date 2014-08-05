@@ -5,9 +5,9 @@ layout: post
 ---
 
 
-<p>Through the Partnership for Open Data (POD), my colleagues at ODI and Open Knowledge and I have had the privilege to support leaders across the globe leading innovations in their cities and countries. </p>
+Through the Partnership for Open Data (POD), my colleagues at ODI and Open Knowledge and I have had the privilege to support leaders across the globe leading innovations in their cities and countries.
 
-<p>We invited four such leaders, two each from civil society and government, to share the lessons from their experiences at an OKFestival Fringe event entitled “Open Data Innovators”. </p>
+We invited four such leaders, two each from civil society and government, to share the lessons from their experiences at an OKFestival Fringe event entitled “Open Data Innovators”.
 
 <p>While the event covered a range of advice from the experience of the speakers, what was striking was that all four <strong>advocated proactive engagement between government and civil society.</strong></p>
 
