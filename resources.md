@@ -40,4 +40,28 @@ enabling the Open Data domain to achieve its full potential in terms of developm
 
 ## Events
 
->Events Calendar
+<table class="events">
+<thead>
+<tr>
+<th>Date</th>
+<th>Location</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+{% assign eCount=0 %}
+{% for event in site.data.events %}
+{% unless event.draft %}
+{% assign eCount=eCount+1 %}
+<tr>
+<td>{{ event.date }}</td>
+<td>{{ event.location }}</td>
+<td><strong>{% if event.url %}<a href="{{ event.url }}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</strong><br/>{{ event.description }}</td>
+</tr>
+{% endunless %}
+{% endfor %}
+{% if eCount == 0 %}
+<tr><td class="empty" colspan="3">No upcoming events at this time</td></tr>
+{% endif %}
+</tbody>
+</table>

@@ -8,7 +8,7 @@ cover_image: banners/planning.jpg
 
 **Follow POD on [Facebook](http://facebook.com/{{site.inc.facebook}}), [Twitter](https://twitter.com{{site.inc.twitter}}),
 and the [POD Listserve](http://lists.p4od.org/mailman/listinfo/p4od)**
-{: .center .note }
+{: .note }
 
 ## Partner with POD
 
@@ -26,6 +26,8 @@ If your organization is interested in joining POD, please consult the [partnersh
 **[Click here to request partnership information]({{site.contact}})**
 {: .center }
 
+{% comment %}
+
 ## Share Your Stories
 
 >TBD
@@ -37,3 +39,5 @@ If your organization is interested in joining POD, please consult the [partnersh
 ## Give Us Feedback
 
 >TBD
+
+{% endcomment %}

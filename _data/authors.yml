@@ -1,7 +1,10 @@
 therzog:
   name: Tim Herzog
-  image: therzog.png
+  # image: therzog.png
   url: http://blogs.worldbank.org/team/tim-herzog
-astott:
-  name: Andrew Stott
-  url: http://blogs.worldbank.org/user/9924
+lcarolan:
+  name: Liz Carolan
+  url: http://theodi.org/team/liz-carolan
+dtarrant:
+  name: David Tarrant
+  url: http://theodi.org/team/david-tarrant

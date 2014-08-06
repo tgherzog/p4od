@@ -357,6 +357,16 @@ a.allblogs {
   margin-top: 20px;
 }
 
+img.country-map {
+  width: 100%;
+}
+
+ul.countries li {
+  display: inline-block;
+  padding: 0 0.5em;
+  font-size: 85%;
+}
+
 section {
   h2 {
 	margin-top: 40px;
@@ -372,3 +382,17 @@ header {
   }
 }
 
+table.events {
+  td, th {
+    padding: 0.25em 1em;
+	text-align: left;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  td.empty {
+    text-align: center;
+  }
+}
