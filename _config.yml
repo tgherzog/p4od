@@ -13,10 +13,6 @@ exclude:
 # base url - no trailing slash
 url: http://tgherzog.github.io/p4od
 
-# site_css is the name of the compiled CSS file. This is necessary because currently it's hard to implement SASS
-# on gh-pages, so we must manually copy the built CSS file back to the source directory before commits
-site_css: site.css
-
 contact: https://docs.google.com/forms/d/10jGnTlIHD5NQcCAU_fkObPpnBb3cOG2ZWf8tIjE0ZUc/viewform
 
 # theme parameters
@@ -57,15 +53,13 @@ menu:
   title: News &amp; Blog
 
 
-# Note that defaults are apparently not supported on gh-pages
 defaults:
 -
   scope:
     path: ""
-    # type: page
   values:
-    # menu: blog
-    cover_image: banners/blog-cover.jpg
+    layout: page
+    # cover_image: banners/blog-cover.jpg
 -
   scope:
     path: ""

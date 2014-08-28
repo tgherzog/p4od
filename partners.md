@@ -1,5 +1,4 @@
 ---
-layout: page
 menu: partners
 title: Partners
 cover_image: banners/classroom2.jpg

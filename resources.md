@@ -1,5 +1,4 @@
 ---
-layout: page
 menu: resources
 title: Resources
 cover_image: banners/classroom.jpg

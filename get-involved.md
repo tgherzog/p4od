@@ -1,5 +1,4 @@
 ---
-layout: page
 menu: get-involved
 title: Get Involved
 cover_image: banners/planning.jpg

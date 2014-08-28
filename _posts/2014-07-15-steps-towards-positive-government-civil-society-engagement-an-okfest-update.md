@@ -1,7 +1,6 @@
 ---
 title: "How to build relationships between government and civil society - #OKFest"
 author: lcarolan
-layout: post
 ---
 
 

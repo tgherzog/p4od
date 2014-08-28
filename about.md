@@ -1,5 +1,4 @@
 ---
-layout: page
 menu: about
 title: About the Partnership for Open Data
 cover_image: banners/3-men.jpg
